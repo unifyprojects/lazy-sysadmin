@@ -1,0 +1,26 @@
+{
+  "main": "bin/lazy-sysadmin.php",
+  "output": "lazy-sysadmin",
+  "finder": [
+    {
+      "notName": "/LICENSE|.*\\.md|.*\\.dist|Makefile|composer\\.json|composer\\.lock/",
+      "exclude": [
+        "doc",
+        "test",
+        "test_old",
+        "tests",
+        "Tests",
+        "vendor-bin"
+      ],
+      "in": "vendor"
+    },
+    {
+      "name": "composer.json",
+      "in": "."
+    },
+    {
+      "name": "*",
+      "in": "src"
+    }
+  ]
+}

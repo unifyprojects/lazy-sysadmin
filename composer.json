@@ -1,0 +1,23 @@
+{
+    "name": "unify/lazy-sysadmin",
+    "description": "Execute SH Files from the current directory",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "azjezz",
+            "email": "azjezz@protonmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "symfony/finder": "^4.2",
+        "league/climate": "^3.4",
+        "symfony/process": "^4.2"
+    },
+    "autoload": {
+        "files": [
+            "src/LazySysAdmin/main.php"
+        ]
+    }
+}
