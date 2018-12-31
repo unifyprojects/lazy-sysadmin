@@ -2,7 +2,25 @@
 
 use League\CLImate\CLImate;
 
-require_once __DIR__.'/../vendor/autoload.php';
+$autoloadFiles = [
+    __DIR__ . '/../vendor/autoload.php',
+    __DIR__ . '/../../../autoload.php',
+];
+
+$autoloaderFound = false;
+
+foreach ($autoloadFiles as $autoloadFile) {
+    if (! file_exists($autoloadFile)) {
+        continue;
+    }
+    require_once $autoloadFile;
+    $autoloaderFound = true;
+}
+
+if (false === $autoloaderFound) {
+    echo 'vendor/autoload.php could not be found. Did you run `composer install`?', PHP_EOL;
+    exit(1);
+}
 
 $console = new CLImate();
 
