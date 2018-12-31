@@ -19,5 +19,8 @@
         "files": [
             "src/LazySysAdmin/main.php"
         ]
-    }
+    },
+    "bin": [
+        "bin/lazy-sysadmin"
+    ]
 }
