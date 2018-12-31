@@ -56,5 +56,6 @@ $ git clone https://github.com/unifyprojects/lazy-sysadmin.git
 $ cd lazy-sysadmin
 $ composer install
 $ box compile
-$ sudo mv lazy-sysadmin /binary/path
+$ sudo chmod a+x lazy-sysadmin
+$ sudo mv lazy-sysadmin /usr/local/bin/lazy-sysadmin
 ```
