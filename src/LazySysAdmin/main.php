@@ -26,7 +26,7 @@ function main(CLImate $console): void
     );
     if (0 === count($files)) {
         $console->error('No scripts found.');
-        return;
+        exit(1);
     }
 
     $commands = array_map(function(SplFileInfo $file): string {
