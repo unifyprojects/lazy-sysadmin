@@ -1,5 +1,5 @@
 {
-    "name": "unify/lazy-sysadmin",
+    "name": "unifyprojects/lazy-sysadmin",
     "description": "Execute SH Files from the current directory",
     "type": "project",
     "license": "MIT",
